@@ -1,0 +1,145 @@
+body {
+  font-size: 100%;
+  font-family: "Samim", "sans-serif";
+  direction: rtl;
+}
+
+@font-face {
+  font-family: "Nastaliq";
+  font-style: normal;
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"), url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"), url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  src: url(../fonts/sahel/Sahel.eot);
+  src: url(../fonts/sahel/Sahel.eot) format("embedded-opentype"), url(../fonts/sahel/Sahel.woff2) format("woff2"), url(../fonts/sahel/Sahel.woff) format("woff"), url(../fonts/sahel/Sahel.ttf) format("truetype");
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot);
+  src: url(../fonts/sahel/Farsi-Digits/Sahel-FD.eot) format("embedded-opentype"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff2) format("woff2"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.woff) format("woff"), url(../fonts/sahel/Farsi-Digits/Sahel-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"), url(../fonts/samim/Samim.woff2) format("woff2"), url(../fonts/samim/Samim.woff) format("woff"), url(../fonts/samim/Samim.ttf) format("truetype");
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  src: url(../fonts/Vazir/Vazir.eot);
+  src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
+}
+
+div.container-fluid.signup {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.container-fluid.signup section.section-left {
+  background-color: #6c204c;
+  width: 40%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.container-fluid.signup section.section-right {
+  height: 100%;
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.container-fluid.signup section.section-right img.logo {
+  width: 28%;
+  margin-bottom: 2rem;
+}
+
+div.container-fluid.signup section.section-right form.signup-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.form-group input {
+  width: 100%;
+  font-size: 88%;
+  padding: .5rem;
+  height: 37px;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.form-group input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 32, 76, 0.25);
+  border-color: rgba(108, 32, 76, 0.35);
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.button-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.button-section a.forget {
+  color: #6c204c;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 83%;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.button-section a.forget:active, div.container-fluid.signup section.section-right form.signup-form div.button-section a.forget:focus {
+  outline: none;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn {
+  color: #6c204c;
+  border-color: #6c204c;
+  background-color: transparent;
+  font-weight: bold;
+  width: 40%;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn:hover, div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn:focus {
+  border-color: rgba(108, 32, 76, 0.35);
+  background-color: #6c204c;
+  color: white;
+  font-weight: 500;
+}
+
+div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 32, 76, 0.25);
+}
+/*# sourceMappingURL=Signup.css.map */
