@@ -18,6 +18,62 @@ div.container-fluid.signup {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        div.section-login {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 15%;
+            width: 100%;
+
+            a.registered {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 100%;
+                width: 40%;
+                text-align: center;
+
+                &:hover,
+                &:focus {
+                    color: rgba($color: #ffffff, $alpha: .7);
+                }
+
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            a.login-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 38%;
+                color: #ffffff;
+                text-decoration: none;
+
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+
+                button.login-btn {
+                    background-color: transparent;
+                    color: rgba($color: #ffffff, $alpha: 1.0);
+                    border-color: rgba($color: #ffffff, $alpha: 1.0);
+                    font-size: 90%;
+                    width: 100%;
+
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0 0 0 0.2rem rgba($color: #ffffff, $alpha: .25);
+                        color: rgba($color: #ffffff, $alpha: .85);
+                    }
+                }
+            }
+        }
     }
 
     section.section-right {
@@ -77,7 +133,6 @@ div.container-fluid.signup {
                     &:active,
                     &:focus {
                         outline: none;
-
                     }
                 }
 

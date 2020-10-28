@@ -62,6 +62,58 @@ div.container-fluid.signup section.section-left {
   flex-direction: column;
 }
 
+div.container-fluid.signup section.section-left div.section-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+}
+
+div.container-fluid.signup section.section-left div.section-login a.registered {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 100%;
+  width: 40%;
+  text-align: center;
+}
+
+div.container-fluid.signup section.section-left div.section-login a.registered:hover, div.container-fluid.signup section.section-left div.section-login a.registered:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+div.container-fluid.signup section.section-left div.section-login a.registered:active, div.container-fluid.signup section.section-left div.section-login a.registered:focus {
+  outline: none;
+}
+
+div.container-fluid.signup section.section-left div.section-login a.login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 38%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div.container-fluid.signup section.section-left div.section-login a.login-link:active, div.container-fluid.signup section.section-left div.section-login a.login-link:focus {
+  outline: none;
+}
+
+div.container-fluid.signup section.section-left div.section-login a.login-link button.login-btn {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  font-size: 90%;
+  width: 100%;
+}
+
+div.container-fluid.signup section.section-left div.section-login a.login-link button.login-btn:hover, div.container-fluid.signup section.section-left div.section-login a.login-link button.login-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.85);
+}
+
 div.container-fluid.signup section.section-right {
   height: 100%;
   width: 60%;
