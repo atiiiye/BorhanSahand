@@ -37,18 +37,32 @@ div.container-fluid.login {
                 align-items: center;
                 justify-content: space-around;
                 width: 100%;
-                height: 150px;
+                height: 100%;
 
                 input {
                     width: 100%;
                     font-size: 88%;
                     padding: .5rem;
                     height: 37px;
+                    margin-top: 1rem;
 
                     &:focus {
                         box-shadow: 0 0 0 0.2rem rgba($color: $color-purple, $alpha: .25);
                         border-color: rgba($color: $color-purple, $alpha: .35);
                     }
+                }
+
+                div.srv-validation-message{
+                    width: 100%;
+                    color: #ffffff;
+                    font-size: 78%;
+                    border: 1px solid rgba($color: $color-purple, $alpha: 1.0);
+                    border-radius: 4px;
+                    background-color: rgba($color: $color-purple, $alpha: .7);
+                    padding: .5rem;
+                    // margin-bottom: .5rem ;
+                    margin-top: .1rem;
+                    text-align: right;
                 }
             }
 
@@ -61,7 +75,7 @@ div.container-fluid.login {
                 a.forget {
                     color: rgba($color: $color-purple, $alpha: 1.0);
                     font-weight: bold;
-                    text-decoration: none;
+                    // text-decoration: none;
                     font-size: 83%;
 
                     &:active,
@@ -150,16 +164,24 @@ div.container-fluid.login {
 
 
                 button.signup-btn {
-                    background-color: transparent;
-                    color: rgba($color: #ffffff, $alpha: 1.0);
-                    border-color: rgba($color: #ffffff, $alpha: 1.0);
+                    background-color: #ffffff;
+                    color: rgba($color: $color-purple, $alpha: 1.0);
+                    border-color: rgba($color: $color-purple, $alpha: 1.0);
                     font-size: 90%;
                     width: 100%;
+                    font-weight: 600;
 
                     &:hover,
                     &:focus {
+                        // color: rgba($color: #ffffff, $alpha: .85);
+                        // background-color: transparent;
+                        border-color: rgba($color: #ffffff, $alpha: 1.0);
                         box-shadow: 0 0 0 0.2rem rgba($color: #ffffff, $alpha: .25);
-                        color: rgba($color: #ffffff, $alpha: .85);
+                    }
+
+                    &:focus,
+                    &:active {
+                        box-shadow: 0 0 0 0.2rem rgba($color: #ffffff, $alpha: .25);
                     }
 
                 }

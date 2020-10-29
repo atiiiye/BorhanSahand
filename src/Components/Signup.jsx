@@ -7,11 +7,17 @@ import "./../css/Signup.css";
 import logo from "./../img/footer_logo.png";
 
 //import reactstrap
-import { Button, Form, FormGroup, Input, FormText } from "reactstrap";
+import { Button, Form, FormGroup, Input } from "reactstrap";
 
 import { NavLink } from "react-router-dom";
 
 export class Signup extends Component {
+  handleSubmit = (e) => {
+    e.preventDefault();
+  };
+  handleChange = (e) => {
+    e.preventDefault();
+  };
   render() {
     return (
       <React.Fragment>
@@ -25,13 +31,26 @@ export class Signup extends Component {
                   name="username"
                   id="username"
                   placeholder="نام کاربری (کد ملی)"
+                  onChange={(e)=>this.handleChange(e)}
+                />
+                <Input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="کلمه عبور"
+                   onChange={(e)=>this.handleChange(e)}
+                />
+                <Input
+                  type="confirmPassword"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  placeholder="تکرار کلمه عبور"
+                   onChange={(e)=>this.handleChange(e)}
                 />
               </FormGroup>
               <div className="button-section">
-                <NavLink to="/" className="forget">
-                  
-                </NavLink>
-                <Button className="login-btn" type="submit">
+                <NavLink to="/" className="forget"></NavLink>
+                <Button className="register" type="submit">
                   ثبت نام
                 </Button>
               </div>
@@ -44,7 +63,7 @@ export class Signup extends Component {
                 قبلا ثبت نام کرده اید ؟
               </NavLink>
               <NavLink className="login-link" to="/">
-                <Button className="login-btn" type="button">
+                <Button className="login-button" type="button">
                   ورود
                 </Button>
               </NavLink>

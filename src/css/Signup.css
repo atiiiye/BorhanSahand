@@ -101,17 +101,22 @@ div.container-fluid.signup section.section-left div.section-login a.login-link:a
   outline: none;
 }
 
-div.container-fluid.signup section.section-left div.section-login a.login-link button.login-btn {
-  background-color: transparent;
-  color: white;
-  border-color: white;
+div.container-fluid.signup section.section-left div.section-login a.login-link button.login-button {
+  background-color: #ffffff;
+  color: #6c204c;
+  border-color: #6c204c;
   font-size: 90%;
   width: 100%;
+  font-weight: 600;
 }
 
-div.container-fluid.signup section.section-left div.section-login a.login-link button.login-btn:hover, div.container-fluid.signup section.section-left div.section-login a.login-link button.login-btn:focus {
+div.container-fluid.signup section.section-left div.section-login a.login-link button.login-button:hover, div.container-fluid.signup section.section-left div.section-login a.login-link button.login-button:focus {
+  border-color: white;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
-  color: rgba(255, 255, 255, 0.85);
+}
+
+div.container-fluid.signup section.section-left div.section-login a.login-link button.login-button:focus, div.container-fluid.signup section.section-left div.section-login a.login-link button.login-button:active {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 
 div.container-fluid.signup section.section-right {
@@ -158,6 +163,19 @@ div.container-fluid.signup section.section-right form.signup-form div.form-group
   border-color: rgba(108, 32, 76, 0.35);
 }
 
+div.container-fluid.signup section.section-right form.signup-form div.form-group div.srv-validation-message {
+  width: 100%;
+  color: #ffffff;
+  font-size: 85%;
+  border: 1px solid #6c204c;
+  border-radius: 4px;
+  background-color: rgba(108, 32, 76, 0.7);
+  padding: .5rem;
+  margin-bottom: .5rem;
+  margin-top: .1rem;
+  text-align: right;
+}
+
 div.container-fluid.signup section.section-right form.signup-form div.button-section {
   width: 100%;
   display: flex;
@@ -176,7 +194,7 @@ div.container-fluid.signup section.section-right form.signup-form div.button-sec
   outline: none;
 }
 
-div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn {
+div.container-fluid.signup section.section-right form.signup-form div.button-section button.register {
   color: #6c204c;
   border-color: #6c204c;
   background-color: transparent;
@@ -184,14 +202,14 @@ div.container-fluid.signup section.section-right form.signup-form div.button-sec
   width: 40%;
 }
 
-div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn:hover, div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn:focus {
+div.container-fluid.signup section.section-right form.signup-form div.button-section button.register:hover, div.container-fluid.signup section.section-right form.signup-form div.button-section button.register:focus {
   border-color: rgba(108, 32, 76, 0.35);
   background-color: #6c204c;
   color: white;
   font-weight: 500;
 }
 
-div.container-fluid.signup section.section-right form.signup-form div.button-section button.login-btn:focus {
+div.container-fluid.signup section.section-right form.signup-form div.button-section button.register:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 32, 76, 0.25);
 }
 /*# sourceMappingURL=Signup.css.map */

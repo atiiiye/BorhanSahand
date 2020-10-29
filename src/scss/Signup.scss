@@ -59,17 +59,25 @@ div.container-fluid.signup {
                     outline: none;
                 }
 
-                button.login-btn {
-                    background-color: transparent;
-                    color: rgba($color: #ffffff, $alpha: 1.0);
-                    border-color: rgba($color: #ffffff, $alpha: 1.0);
+                button.login-button {
+                    background-color: #ffffff;
+                    color: rgba($color: $color-purple, $alpha: 1.0);
+                    border-color: rgba($color: $color-purple, $alpha: 1.0);
                     font-size: 90%;
                     width: 100%;
+                    font-weight: 600;
 
                     &:hover,
                     &:focus {
+                        // color: rgba($color: #ffffff, $alpha: .85);
+                        // background-color: transparent;
+                        border-color: rgba($color: #ffffff, $alpha: 1.0);
                         box-shadow: 0 0 0 0.2rem rgba($color: #ffffff, $alpha: .25);
-                        color: rgba($color: #ffffff, $alpha: .85);
+                    }
+
+                    &:focus,
+                    &:active {
+                        box-shadow: 0 0 0 0.2rem rgba($color: #ffffff, $alpha: .25);
                     }
                 }
             }
@@ -116,6 +124,19 @@ div.container-fluid.signup {
                         border-color: rgba($color: $color-purple, $alpha: .35);
                     }
                 }
+
+                div.srv-validation-message {
+                    width: 100%;
+                    color: #ffffff;
+                    font-size: 85%;
+                    border: 1px solid rgba($color: $color-purple, $alpha: 1.0);
+                    border-radius: 4px;
+                    background-color: rgba($color: $color-purple, $alpha: .7);
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                    margin-top: .1rem;
+                    text-align: right;
+                }
             }
 
             div.button-section {
@@ -136,7 +157,7 @@ div.container-fluid.signup {
                     }
                 }
 
-                button.login-btn {
+                button.register {
                     color: rgba($color: $color-purple, $alpha: 1.0);
                     border-color: rgba($color: $color-purple, $alpha: 1.0);
                     background-color: transparent;

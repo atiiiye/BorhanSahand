@@ -80,7 +80,7 @@ div.container-fluid.login section.section-left form.login-form div.form-group {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 150px;
+  height: 100%;
 }
 
 div.container-fluid.login section.section-left form.login-form div.form-group input {
@@ -88,11 +88,24 @@ div.container-fluid.login section.section-left form.login-form div.form-group in
   font-size: 88%;
   padding: .5rem;
   height: 37px;
+  margin-top: 1rem;
 }
 
 div.container-fluid.login section.section-left form.login-form div.form-group input:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 32, 76, 0.25);
   border-color: rgba(108, 32, 76, 0.35);
+}
+
+div.container-fluid.login section.section-left form.login-form div.form-group div.srv-validation-message {
+  width: 100%;
+  color: #ffffff;
+  font-size: 78%;
+  border: 1px solid #6c204c;
+  border-radius: 4px;
+  background-color: rgba(108, 32, 76, 0.7);
+  padding: .5rem;
+  margin-top: .1rem;
+  text-align: right;
 }
 
 div.container-fluid.login section.section-left form.login-form div.button-section {
@@ -105,7 +118,6 @@ div.container-fluid.login section.section-left form.login-form div.button-sectio
 div.container-fluid.login section.section-left form.login-form div.button-section a.forget {
   color: #6c204c;
   font-weight: bold;
-  text-decoration: none;
   font-size: 83%;
 }
 
@@ -183,15 +195,20 @@ div.container-fluid.login section.section-right div.section-signup a.register:ac
 }
 
 div.container-fluid.login section.section-right div.section-signup a.register button.signup-btn {
-  background-color: transparent;
-  color: white;
-  border-color: white;
+  background-color: #ffffff;
+  color: #6c204c;
+  border-color: #6c204c;
   font-size: 90%;
   width: 100%;
+  font-weight: 600;
 }
 
 div.container-fluid.login section.section-right div.section-signup a.register button.signup-btn:hover, div.container-fluid.login section.section-right div.section-signup a.register button.signup-btn:focus {
+  border-color: white;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
-  color: rgba(255, 255, 255, 0.85);
+}
+
+div.container-fluid.login section.section-right div.section-signup a.register button.signup-btn:focus, div.container-fluid.login section.section-right div.section-signup a.register button.signup-btn:active {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 /*# sourceMappingURL=Login.css.map */
