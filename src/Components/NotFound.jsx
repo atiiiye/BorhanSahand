@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class NotFound extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+const NotFound = () => {
+
+    return (
+        <React.Fragment>
+
+        </React.Fragment>
+
+    )
 }
 
 export default NotFound;

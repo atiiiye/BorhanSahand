@@ -47,20 +47,19 @@ div.container-fluid.login {
                     margin-top: 1rem;
 
                     &:focus {
-                        box-shadow: 0 0 0 0.2rem rgba($color: $color-purple, $alpha: .25);
-                        border-color: rgba($color: $color-purple, $alpha: .35);
+                        box-shadow: 0 0 0 0.15rem rgba($color: $color-gray-3, $alpha: .25);
+                        border-color: rgba($color: $color-gray-2, $alpha: .35);
                     }
                 }
 
-                div.srv-validation-message{
+                div.srv-validation-message {
                     width: 100%;
                     color: #ffffff;
                     font-size: 78%;
-                    border: 1px solid rgba($color: $color-purple, $alpha: 1.0);
+                    border: 1px solid rgba($color: $color-red-1, $alpha: 1.0);
                     border-radius: 4px;
-                    background-color: rgba($color: $color-purple, $alpha: .7);
+                    background-color: rgba($color: $color-red-1, $alpha: .8);
                     padding: .5rem;
-                    // margin-bottom: .5rem ;
                     margin-top: .1rem;
                     text-align: right;
                 }
