@@ -54,7 +54,6 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // recaptchaRef.current.execute();
     if (validator.current.allValid()) {
       successMessage("ورود شما با موفقیت انجام شد")
       console.info("SUBMITED")
@@ -72,6 +71,11 @@ const Signup = () => {
       setVerify(true)
     }
   }
+
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  }
+
 
   const resetRecaptcha = () => {
     recaptchaInstance.reset();
@@ -169,6 +173,7 @@ const Signup = () => {
                 sitekey="6Ldt8d4ZAAAAAADPtaua7S3x8NN9-T6gkz6h0U1e"
                 verifyCallback={verifyCallback}
                 onloadCallback={callback}
+                onChange={onChange}
               />
             </FormGroup>
             <div className="button-section">

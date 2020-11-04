@@ -39,7 +39,7 @@ const Login = () => {
   );
 
   const handleClick = useCallback((captcha) => {
-    console.log('captcha:', captcha);
+    // setCaptcha(captcha);
   }, []);
 
   const handleSubmit = (e) => {
@@ -99,7 +99,6 @@ const Login = () => {
                 "required|integer|min:5"
               )}
             </FormGroup>
-
             <FormGroup>
 
               <Input
@@ -139,7 +138,7 @@ const Login = () => {
                 "required|alpha_num|regex:pattern"
               )}
               <div className="captcha-box">
-                <Captcha className="mt-3 w-50" charNum={4} onChange={handleClick} />
+                <Captcha className="mt-3 w-50 bg-light" charNum={4} onChange={handleClick} />
                 <i class="fa fa-refresh" onChange={handleClick}></i>
               </div>
             </FormGroup>
