@@ -31,7 +31,7 @@ div.container-fluid.signup {
                 color: #ffffff;
                 text-decoration: none;
                 font-size: 100%;
-                width: 40%;
+                width: 100%;
                 text-align: center;
 
                 &:hover,
@@ -50,7 +50,7 @@ div.container-fluid.signup {
                 justify-content: center;
                 align-items: center;
                 text-decoration: none;
-                width: 38%;
+                width: 100%;
                 color: #ffffff;
                 text-decoration: none;
 
@@ -64,7 +64,7 @@ div.container-fluid.signup {
                     color: rgba($color: $color-purple, $alpha: 1.0);
                     border-color: rgba($color: $color-purple, $alpha: 1.0);
                     font-size: 90%;
-                    width: 100%;
+                    width: 40%;
                     font-weight: 600;
 
                     &:hover,
@@ -142,27 +142,15 @@ div.container-fluid.signup {
             div.button-section {
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
-
-                a.forget {
-                    color: rgba($color: $color-purple, $alpha: 1.0);
-                    font-weight: bold;
-                    text-decoration: none;
-                    font-size: 83%;
-
-                    &:active,
-                    &:focus {
-                        outline: none;
-                    }
-                }
 
                 button.register {
                     color: rgba($color: $color-purple, $alpha: 1.0);
                     border-color: rgba($color: $color-purple, $alpha: 1.0);
                     background-color: transparent;
                     font-weight: bold;
-                    width: 40%;
+                    width: 50%;
 
                     &:hover,
                     &:focus {

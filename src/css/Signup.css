@@ -75,7 +75,7 @@ div.container-fluid.signup section.section-left div.section-login a.registered {
   color: #ffffff;
   text-decoration: none;
   font-size: 100%;
-  width: 40%;
+  width: 100%;
   text-align: center;
 }
 
@@ -92,7 +92,7 @@ div.container-fluid.signup section.section-left div.section-login a.login-link {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 38%;
+  width: 100%;
   color: #ffffff;
   text-decoration: none;
 }
@@ -106,7 +106,7 @@ div.container-fluid.signup section.section-left div.section-login a.login-link b
   color: #6c204c;
   border-color: #6c204c;
   font-size: 90%;
-  width: 100%;
+  width: 40%;
   font-weight: 600;
 }
 
@@ -179,19 +179,8 @@ div.container-fluid.signup section.section-right form.signup-form div.form-group
 div.container-fluid.signup section.section-right form.signup-form div.button-section {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-div.container-fluid.signup section.section-right form.signup-form div.button-section a.forget {
-  color: #6c204c;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 83%;
-}
-
-div.container-fluid.signup section.section-right form.signup-form div.button-section a.forget:active, div.container-fluid.signup section.section-right form.signup-form div.button-section a.forget:focus {
-  outline: none;
 }
 
 div.container-fluid.signup section.section-right form.signup-form div.button-section button.register {
@@ -199,7 +188,7 @@ div.container-fluid.signup section.section-right form.signup-form div.button-sec
   border-color: #6c204c;
   background-color: transparent;
   font-weight: bold;
-  width: 40%;
+  width: 50%;
 }
 
 div.container-fluid.signup section.section-right form.signup-form div.button-section button.register:hover, div.container-fluid.signup section.section-right form.signup-form div.button-section button.register:focus {

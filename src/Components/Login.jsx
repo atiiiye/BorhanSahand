@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useCallback } from "react";
 
 //import css
 import "./../css/Login.css";
@@ -10,19 +10,18 @@ import logo from "./../img/footer_logo.png";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 
 //import packages
-import ReCAPTCHA from "react-google-recaptcha";
 import { NavLink } from "react-router-dom";
 import SimpleReactValidator from "simple-react-validator";
+import Captcha from 'react-captcha-code';
 
 //import utils
 import { successMessage, errorMessage } from './../utils/message'
 
-const Login = () => {
 
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [captcha, setCaptcha] = useState("");
-
 
   const [, forceUpdate] = useState();
 
@@ -32,14 +31,16 @@ const Login = () => {
       messages: {
         required: "پر کردن این فیلد الزامی میباشد",
         min: "کمتر از 5 کاراکتر نباید باشد",
+        regex: "الگوی وارد شده هماهنگ نمی باشد",
         username: "کد ملی نوشته شده صحیح نمی باشد",
         integer: "کد ملی نمی تواند شامل حروف باشد"
       }
     })
   );
-  // const onChange = (value) => {
-  //   console.log("Captcha value:", value);
-  // };
+
+  const handleClick = useCallback((captcha) => {
+    console.log('captcha:', captcha);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,14 +69,15 @@ const Login = () => {
           <div className="section-signup">
             <NavLink to="/Signup" className="new-user">
               کاربر جدید هستید ؟
-          </NavLink>
+            </NavLink>
             <NavLink className="register" to="/Signup">
               <Button className="signup-btn" type="button">
                 ثبت نام
-            </Button>
+              </Button>
             </NavLink>
           </div>
         </section>
+
         <section className="section-left">
           <img src={logo} alt="" className="logo" />
           <Form className="login-form" onSubmit={(e) => handleSubmit(e)}>
@@ -96,6 +98,10 @@ const Login = () => {
                 username,
                 "required|integer|min:5"
               )}
+            </FormGroup>
+
+            <FormGroup>
+
               <Input
                 type="password"
                 name="password"
@@ -112,6 +118,9 @@ const Login = () => {
                 password,
                 "required|min:6"
               )}
+            </FormGroup>
+            <FormGroup>
+
               <Input
                 type="text"
                 name="captcha"
@@ -123,16 +132,16 @@ const Login = () => {
                   validator.current.showMessageFor("captcha");
                 }}
               />
+
               {validator.current.message(
                 "کد امنیتی",
                 captcha,
-                "required|alpha_num"
+                "required|alpha_num|regex:pattern"
               )}
-              <ReCAPTCHA
-                sitekey="Your client site key"
-                size="invisible"
-              // onChange={() => }
-              />
+              <div className="captcha-box">
+                <Captcha className="mt-3 w-50" charNum={4} onChange={handleClick} />
+                <i class="fa fa-refresh" onChange={handleClick}></i>
+              </div>
             </FormGroup>
             <div className="button-section">
               <NavLink to="/" className="forget">
